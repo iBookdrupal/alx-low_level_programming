@@ -8,9 +8,9 @@
 
 int main(void)
 {
-char rev = 'a';
+char rev = 'z';
 
-	while (rev > 'a')
+	while (rev >= 'a')
 	{
 		putchar(rev);
 		rev--;
