@@ -8,21 +8,22 @@
 
 int main(void)
 {
-	char alphahex = 'A';
+	char alphahex = 'a';
 	char numhex = '0';
-
-
-	while (alphahex >= 'F')
-	{
-		putchar(alphahex);
-		alphahex++;
-	}
 
 	while (numhex <= '9')
 	{
 	putchar(numhex);
 	numhex++;
 	}
+
+while (alphahex <= 'f')
+	{
+		putchar(alphahex);
+		alphahex++;
+	}
+
+
 
 	putchar('\n');
 
