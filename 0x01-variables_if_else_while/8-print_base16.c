@@ -17,7 +17,7 @@ int main(void)
 	numhex++;
 	}
 
-while (alphahex <= 'f')
+	while (alphahex <= 'f')
 	{
 		putchar(alphahex);
 		alphahex++;
