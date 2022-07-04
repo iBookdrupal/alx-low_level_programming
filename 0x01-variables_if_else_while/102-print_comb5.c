@@ -12,18 +12,27 @@ int main(void)
 	int c;
 	int n;
 
-	for (c = 48; c <= 57; c++)
+	for (c = 0; c < 100; c++)
 	{
-		for (n = 48; n <= 57; n++)
+		for (n = 0; n < 100; n++)
 		{
-			putchar(c);
-			putchar(n);
 
-			if (c != 57 || n != 57)
+			if (c < n)
 			{
-				putchar(44);
-				putchar(32);
+				putchar((c / 10) + 48);
+				putchar((c % 10) + 48);
+				putchar(' ');
+				putchar((n / 10) + 48);
+				putchar((n % 10) + 48);
+
+				if (c != 98 || n != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+
 			}
+
 		}
 
 	}
