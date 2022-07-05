@@ -15,9 +15,9 @@ if (n > 15 || n < 0)
 else if (n > 0 || n < 15)
 {
 
-	for (i =  0; i < n; i++)
+	for (i =  0; i <= n; i++)
 	{
-		for (j = 0; j < n; j++)
+		for (j = 0; j <= n; j++)
 		{
 			k = j * i;
 			if (j == 0)
@@ -25,7 +25,7 @@ else if (n > 0 || n < 15)
 				_putchar(k + '0');
 			}
 
-		if (k < n && j != 0)
+		if (k <= n && j != 0)
 		{
 			_putchar(',');
 			_putchar(' ');
