@@ -2,7 +2,7 @@
 #include "main.h"
 /**
 * main -> printing fibbonacci series
-* fib -> method for fibbonacci series
+* fib -> display and take in fib number
 * Return: always 0
 * @n: argument
 */
@@ -25,9 +25,9 @@ int fib(int n)
 
 int main(void)
 {
-	int n;
+	int n = 50;
 
-	printf("%d\n, ", fib(n));
+	printf("%d, ", fib(n));
 	return (0);
 }
 
