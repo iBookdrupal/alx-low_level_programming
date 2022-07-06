@@ -32,8 +32,8 @@ int fib(int n)
 	return (k);
 }
 
-int sum(int n);
-int fib(int n);
+long int sum(int n);
+long int fib(int n);
 
 
 int main(void)
@@ -50,11 +50,11 @@ int main(void)
 
 
 
-int sum(int n)
+long int sum(int n)
 {
 
 int N = 4000000;
-	int sum = 0;
+long int sum = 0;
 
 	while (fib(n) < N)
 	{
