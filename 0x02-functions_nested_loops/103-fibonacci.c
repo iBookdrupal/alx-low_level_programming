@@ -1,72 +1,30 @@
 #include <stdio.h>
 /**
-* main -> printing fibbonacci series
+* main -> printing with limit of 4000000
 * Return: always 0
-* sum -> checking and adding sum of fib
-* fib -> fibbonacci method
-* @n: argument
 */
 
-int fib(int n)
+int main(void)
 {
-	long int i, j, k, next;
+	int i;
+	unsigned long int j, k, next, sum;
 
 	j = 1;
 	k = 2;
+	sum = 0;
 
-	for (i = 1; i <= n; ++i)
+	for (i = 1; i <= 33; ++i)
 	{
-		if (j != 20365011074)
+		if (j < 4000000 && (j % 2) == 0)
 		{
-			printf("%ld, ", j);
-		}
-		else
-		{
-			printf("%ld\n", j);
+			sum = sum + j;
 		}
 		next = j + k;
 		j = k;
 		k = next;
 	}
 
-	return (k);
-}
-
-long int sum(int n);
-int fib(int n);
-
-
-int main(void)
-{
-	int i = 2;
-
-	printf("%ld\n", sum(i));
-
-
-
+	printf("%lu\n", sum);
 
 	return (0);
-}
-
-
-
-long int sum(int n)
-{
-
-int N = 4000000;
-long int sum = 0;
-
-	while (fib(n) < N)
-	{
-
-		if (fib(n) % 2 == 0)
-		{
-
-			sum += fib(n);
-		}
-
-		n++;
-	}
-
-	return (sum);
 }
