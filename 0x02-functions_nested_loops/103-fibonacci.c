@@ -33,7 +33,7 @@ int fib(int n)
 }
 
 long int sum(int n);
-long int fib(int n);
+int fib(int n);
 
 
 int main(void)
