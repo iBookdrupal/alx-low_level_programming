@@ -18,7 +18,7 @@ int print_sum_of_numbers(void)
 		}
 		else if (i % 5 == 0)
 		{
-			sum += i;
+			sum5 += i;
 		}
 	}
 
