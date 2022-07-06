@@ -1,33 +1,32 @@
 #include <stdio.h>
-#include "main.h"
 /**
 * main -> printing fibbonacci series
-* fib -> display and take in fib number
 * Return: always 0
-* @n: argument
 */
-
-int fib(int n)
-{
-	int a = 1, b = 2, c, i;
-
-	if (n == 1)
-		return (a);
-
-	for (i = 3; i <= n; i++)
-	{
-		c = a + b;
-		a = b;
-		b = c;
-	}
-	return (b);
-}
 
 int main(void)
 {
-	int n = 50;
+long int i, j, k, next;
 
-	printf("%d, ", fib(n));
+	j = 1;
+	k = 2;
+
+	for (i = 1; i <= 50; ++i)
+	{
+		if (j != 20365011074)
+		{
+			printf("%ld, ", j);
+		}
+		else
+		{
+			printf("%ld\n", j);
+		}
+	}
+	next = j + k;
+	j = k;
+	k = next;
+
+
 	return (0);
 }
 
