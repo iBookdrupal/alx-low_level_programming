@@ -21,7 +21,7 @@ int main(void)
 		next = j + k;
 		if (i != 98)
 		{
-			printf("%lu, ", next);
+			printf("%lu, ", j, k, next);
 		}
 
 		j = k;
