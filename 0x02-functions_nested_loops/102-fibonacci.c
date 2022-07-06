@@ -2,19 +2,19 @@
 #include "main.h"
 /**
 * main -> printing fibbonacci series
-* fib: method for fibbonacci series
+* fib -> method for fibbonacci series
 * Return: always 0
 * @n: argument
 */
 
 int fib(int n)
 {
-	int a = 0, b = 1, c, i;
+	int a = 1, b = 2, c, i;
 
-	if (n == 0)
+	if (n == 1)
 		return (a);
 
-	for (i = 2; i <= n; i++)
+	for (i = 3; i <= n; i++)
 	{
 		c = a + b;
 		a = b;
@@ -25,9 +25,9 @@ int fib(int n)
 
 int main(void)
 {
-	int n = 50;
+	int n;
 
-	printf("%d\n", fib(n));
+	printf("%d\n, ", fib(n));
 	return (0);
 }
 
