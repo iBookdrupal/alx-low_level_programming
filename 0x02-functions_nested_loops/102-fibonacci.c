@@ -21,10 +21,10 @@ long int i, j, k, next;
 		{
 			printf("%ld\n", j);
 		}
+		next = j + k;
+		j = k;
+		k = next;
 	}
-	next = j + k;
-	j = k;
-	k = next;
 
 
 	return (0);
