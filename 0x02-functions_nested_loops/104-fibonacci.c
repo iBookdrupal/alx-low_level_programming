@@ -16,10 +16,10 @@ int main(void)
 	j = 0;
 	k = 1;
 
-	for (i = 1; i <= 86; i++)
+	for (i = 1; i <= 99; i++)
 	{
 		next = j + k;
-		if (i != 86)
+		if (i != 99)
 		{
 			printf("%lu, ", next);
 		}
