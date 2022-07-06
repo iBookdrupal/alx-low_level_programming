@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * main - Entry point
  *
@@ -19,13 +18,12 @@ int main(void)
 
 	for (i = 1; i <= 98; i++)
 	{
-		next = j + k;
 		if (i != 98)
 		{
-			_putchar(j, k);
 			printf("%lu, ", next);
 		}
 
+		next = j + k;
 		j = k;
 		k = next;
 		}
