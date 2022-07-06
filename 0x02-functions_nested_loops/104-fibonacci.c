@@ -13,17 +13,17 @@ int main(void)
 	int i;
 	unsigned long int j, k, next;
 
-	j = 1;
-	k = 2;
+	j = 0;
+	k = 1;
 
 	for (i = 1; i <= 98; i++)
 	{
+		next = j + k;
 		if (i != 98)
 		{
 			printf("%lu, ", next);
 		}
 
-		next = j, k, j + k;
 		j = k;
 		k = next;
 		}
