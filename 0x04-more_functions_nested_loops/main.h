@@ -39,6 +39,11 @@ int _putchar(char c);
 /**
 * print most numbers
 */
-
 void print_most_numbers(void);
+
+/**
+* more_numbers
+*/
+void more_numbers(void);
 #endif
+
