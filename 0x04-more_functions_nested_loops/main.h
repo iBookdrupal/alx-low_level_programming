@@ -51,5 +51,11 @@ void more_numbers(void);
 * @n: argument to hold the value
 */
 void print_line(int n);
+
+/**
+* print_diagonal -> printing diagonal
+* @n: argument
+*/
+void print_diagonal(int n);
 #endif
 
