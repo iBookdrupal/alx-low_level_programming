@@ -37,13 +37,19 @@ void print_numbers(void);
 int _putchar(char c);
 
 /**
-* print most numbers
+* print_most_numbers -> print most numbers
 */
 void print_most_numbers(void);
 
 /**
-* more_numbers
+* more_numbers -> display numbers with exclusion
 */
 void more_numbers(void);
+
+/**
+* print_line - printing lines
+* @n: argument to hold the value
+*/
+void print_line(int n);
 #endif
 
