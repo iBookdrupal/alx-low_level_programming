@@ -57,5 +57,7 @@ void print_line(int n);
 * @n: argument
 */
 void print_diagonal(int n);
+
+void print_square(int size);
 #endif
 
