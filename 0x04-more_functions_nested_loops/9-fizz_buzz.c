@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main: entry point 
+* main -> entry point
 * multiple of 3 prints Fizz
 * multiple of 5 prints Buzz
 * multiple of 3 and 5 prints FizzBuzz
@@ -14,14 +14,14 @@ int main(void)
 	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0)
-			printf("Fizz \n");
+			printf(" Fizz");
 		if (i % 5 == 0)
-			printf("Buzz \n");
+			printf(" Buzz");
 		if ((i % 3) && (i % 5) == 0)
-			printf("FizzBuzz \n");
+			printf(" FizzBuzz");
 		else
-			printf("%d\n", i);
-		}
-
+			printf(i);
+	}
+	printf("\n");
 	return (0);
 }
