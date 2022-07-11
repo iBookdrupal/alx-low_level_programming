@@ -10,7 +10,7 @@ void print_triangle(int size)
 {
 	int i, space, k = 0;
 
-	for (i = 1; i <= size; ++i; k = 0)
+	for (i = 1; i <= size; ++i)
 	{
 		for (space = 1; space <= size - 1; ++space)
 		{
@@ -19,7 +19,8 @@ void print_triangle(int size)
 
 		while (k != 2 * i - 1)
 		{
-			_putchar('# ');
+			_putchar(' ');
+			_putchar('#');
 			++k;
 		}
 
