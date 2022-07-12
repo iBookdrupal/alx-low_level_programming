@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <math.h>
-#include "main.h"
 /**
-* max_prime_factors -> maximum prime factors
-* @n: argument 1
+* main - Entry point. printing the maximum prime factors
 * Return: Always 0.
 */
 
-void main (void)
+void main(void)
 {
 	long int n;
 	long int i;
@@ -28,7 +26,7 @@ void main (void)
 		{
 			max_prime = i;
 			n = n / i;
-		}	
+		}
 	}
 
 	if (n > 4)
