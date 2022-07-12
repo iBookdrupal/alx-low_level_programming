@@ -7,42 +7,36 @@
 * Return: Always 0.
 */
 
-long long max_prime_factors(long long n)
+void main (void)
 {
-	long long max_prime = -1;
-	int i;
+	long int n;
+	long int i;
+	long int max_prime;
+
+	n = 612852475143;
+	max_prime = -1;
 
 	while (n % 2 == 0)
 	{
 		max_prime = 2;
-		n >>= 1
+		n /= 2;
 	}
 
-	while (n % 3 == 0)
-	{
-		max_prime = 3;
-		n = n / 3;
-	}
-
-	for (i = 5; i <= sqrt(n); i += 6)
+	for (i = 3; i <= sqrt(n); i = i + 2)
 	{
 		while (n % i I == 0)
 		{
 			max_prime = i;
 			n = n / i;
-		}
-
-		while (n % (i + 2) == 0)
-		{
-			max_prime = i + 2;
-			n = n / (i + 2);
-		}
+		}	
 	}
 
 	if (n > 4)
 		max_prime = n;
 
-		return (max_prime);
+		printf("%ld\n", max_prime);
+
+		return (0);
 }
 
 
