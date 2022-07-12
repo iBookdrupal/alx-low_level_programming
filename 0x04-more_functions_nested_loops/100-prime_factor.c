@@ -5,7 +5,7 @@
 * Return: Always 0.
 */
 
-void main(void)
+int main(void)
 {
 	long int n;
 	long int i;
@@ -22,14 +22,14 @@ void main(void)
 
 	for (i = 3; i <= sqrt(n); i = i + 2)
 	{
-		while (n % i I == 0)
+		while (n % i == 0)
 		{
 			max_prime = i;
 			n = n / i;
 		}
 	}
 
-	if (n > 4)
+	if (n > 2)
 		max_prime = n;
 
 		printf("%ld\n", max_prime);
