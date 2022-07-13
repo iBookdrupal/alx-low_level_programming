@@ -14,4 +14,10 @@ void reset_to_98(int *n);
 */
 void swap_int(int *a, int *b);
 
+/**
+*_strlen - string length
+*@s: parameter string s
+* Return: 0 always (success)
+*/
+int _strlen(char *s);
 #endif
