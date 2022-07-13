@@ -20,4 +20,14 @@ void swap_int(int *a, int *b);
 * Return: 0 always (success)
 */
 int _strlen(char *s);
+
+
+/**
+*_puts - string length
+*@str: parameter string str
+* Return: 0 always (success)
+*/
+void _puts(char *str);
+
+int _putchar(char c);
 #endif
