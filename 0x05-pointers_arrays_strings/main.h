@@ -43,4 +43,12 @@ void puts_half(char *str);
 void print_array(int *a, int n);
 
 char *_strcpy(char *dest, char *src);
+
+/**
+*_atoi - convert from string to int
+*@s: parameter string to convert
+* Return: 0 always (success)
+*/
+
+int _atoi(char *s);
 #endif
