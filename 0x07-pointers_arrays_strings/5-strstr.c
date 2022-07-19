@@ -9,15 +9,25 @@
 
 char *_strstr(char *haystack, char *needle)
 {
+	int flag = 0;
+
 	while (*haystack != '\0')
 	{
 		if ((*haystack == *needle) && (haystack != needle))
 		{
 			return (haystack);
+			flag = 1;
 		}
 
 		haystack++;
 	}
 
-	return (NULL);
+	if (flag == 1)
+	{
+		return (haystack);
+	}
+	else
+	{
+		return (NULL);
+	}
 }
