@@ -9,10 +9,10 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, size1;
+	int i, t_size;
 	unsigned int sumD1, sumD2;
 
-	size1 = 0;
+	t_size = 0;
 	sumD1 = 0;
 	sumD2 = 0;
 
@@ -29,5 +29,5 @@ void print_diagsums(int *a, int size)
 		sumD2 = sumD2 + a[i];
 	}
 
-	printf("%d", "%d\n", sumD1, sumD2);
+	printf("%d, %d\n", sumD1, sumD2);
 }
