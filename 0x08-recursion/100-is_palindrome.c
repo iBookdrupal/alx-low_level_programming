@@ -1,22 +1,15 @@
 #include "main.h"
 
+int _strlen(char *s);
+int palindrome_check(char *s, int start, int end);
+int is_palindrome(char *s);
+
+
 /**
 * _strlen -> check string length
 * @s: character string
 * Return: number
 */
-
-int _strlen(char *s);
-
-int palindrome_check(char *s, int start, int end);
-int is_palindrome(char *s);
-
-/**
-* is_palindrome - check if a string is a palidrome
-* @s: character string
-* Return: 1 or 0 if success or not
-*/
-
 int _strlen(char *s)
 {
 	if (*s == '\0')
@@ -29,6 +22,11 @@ int _strlen(char *s)
 	}
 }
 
+/**
+* is_palindrome - check if a string is a palidrome
+* @s: character string
+* Return: 1 or 0 if success or not
+*/
 int is_palindrome(char *s)
 {
 	int n = _strlen(s);
@@ -37,6 +35,13 @@ int is_palindrome(char *s)
 }
 
 
+/**
+* palindrome_check - check if a string is a palidrome
+* @start: character string
+* @end: length of the character
+* @s: string to check for  palindrome
+* Return: 1 or 0 if success or not
+*/
 int palindrome_check(char *s, int start, int end)
 {
 	if (end > 0)
