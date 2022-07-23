@@ -13,9 +13,8 @@ int main(int argc, char *argv[])
 {
 	int i, j, k, sum = 0;
 
-	if (argc == 0)
-		printf("0\n");
-
+if (argc > 1)
+	{
 	for (j = 1; j < argc; j++)
 	{
 		for (k = 0; argv[j][k] != '\0'; k++)
@@ -34,5 +33,10 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", sum);
+	}
+	else
+	{
+		printf("%d\n", 0);
+	}
 }
 
