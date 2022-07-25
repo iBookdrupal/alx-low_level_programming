@@ -1,0 +1,29 @@
+#include "main.h"
+#include <stdlib.h>
+/**
+* create_array - create an array of chars
+* @size: number of size
+* @c: character
+* Return: *pointer
+*/
+
+char *create_array(unsigned int size, char c)
+{
+	int *t;
+	int i = 0;
+
+	t[i] = c;
+
+	if (size == 0)
+		return (NULL);
+
+	if (!t)
+	{
+		_putchar(*t);
+	}
+	else
+	{
+		return (NULL);
+	}
+	return (0);
+}
