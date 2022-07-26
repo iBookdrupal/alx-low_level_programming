@@ -3,11 +3,12 @@
 #include <stddef.h>
 
 /**
-* _strdup - create a newly allocated space
-* @str: new string
-* Return: duplicate of string str
+* alloc_grid - prints a grid of integers
+* @width: width of the string
+* @height: height of the string
+* Return: return width and height or 0 for failure
 */
-char *_strdup(char *str)
+int **alloc_grid(int width, int height)
 {
 	int i = 1, j = 0;
 	char *p;
@@ -18,16 +19,6 @@ char *_strdup(char *str)
 	while (str[i])
 		i++;
 
-	p = (char *) malloc(i * sizeof(char) + 1);
-	if (p == NULL)
-		return (NULL);
-
-	while (j < i)
-	{
-		p[j] = str[j];
-		j++;
-	}
-	p[j] = '\0';
 
 	return (p);
 }
