@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
 * alloc_grid - prints a grid of integers
@@ -18,11 +17,9 @@ int **alloc_grid(int width, int height)
 
 	ptr = malloc(height * sizeof(int *));
 	if (ptr == NULL)
-	{
 		free(ptr);
 		return (NULL);
-	}
-
+	
 	for (i = 0; i < height; i++)
 	{
 		ptr[i] = malloc(width * sizeof(int));
@@ -40,9 +37,7 @@ int **alloc_grid(int width, int height)
 	for (k = 0; k < height; k++)
 	{
 		for (l = 0; l < width; l++)
-		{
 			ptr[k][l] = 0;
-		}
 	}
 	return (ptr);
 }
