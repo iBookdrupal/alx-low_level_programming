@@ -5,12 +5,12 @@
 * argstostr - argument to string.
 * @ac: argument counter
 * @av: argument variable
-* Return: Always 0.
+* Return: arguments of concatenated strings
 */
 
 char *argstostr(int ac, char **av)
 {
-	int i, j, k, length;
+	int i, j, k, l;
 	char *str;
 
 	if (ac == 0 || av == NULL)
@@ -19,12 +19,12 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
-			length++;
+			l++;
 
-		length++;
+		l++;
 	}
 
-	str = malloc(sizeof(char) * (length + 1));
+	str = malloc(sizeof(char) * (l + 1));
 
 	if (str == NULL)
 		return (NULL);
