@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
 * argstostr - argument to string.
@@ -24,7 +25,7 @@ char *argstostr(int ac, char **av)
 		l++;
 	}
 
-	str = malloc(sizeof(char) * (l) + 1);
+	str = malloc(sizeof(char) * l);
 
 	if (str == NULL)
 	{
