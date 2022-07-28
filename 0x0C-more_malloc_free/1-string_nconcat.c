@@ -2,40 +2,35 @@
 #include <stdlib.h>
 
 /**
-* _strlen - string length
-* @s: string parameter
-* Return: length of string in integer
-*/
+ * _strlen - string length
+ * @str: string
+ * Return: length of string
+ */
 
-int _strlen(char *s)
+int _strlen(char *str)
 {
 	int i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (str[i] != '\0')
 	{
 		i++;
 	}
-
 	return (i);
 }
 
-
-
-
 /**
-* string_nconcat - string concatenation
-* @s1: string param 1
-* @s2: string param 2
-* @n: number of bytes
-* Return: newly allocated memory space
-*/
-
+ * string_nconcat - concatenates two strings
+ * @s1: first string
+ * @s2: second string
+ * @n: integer
+ * Return: concatenated string
+ */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int num, i, j, len;
 	char *ptr;
+	int num, len, i, j;
 
 	num = n;
 
@@ -60,15 +55,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ptr[i] = s1[i];
 		i++;
 	}
-
 	j = 0;
 	while (j < num)
 	{
 		ptr[i + j] = s2[j];
 		j++;
 	}
-
 	ptr[i + j] = '\0';
-
 	return (ptr);
 }
