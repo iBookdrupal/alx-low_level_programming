@@ -19,7 +19,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	while (name[nlen] != '\0')
 		nlen++;
 	olen = 0;
-	while (ownder[olen] != '\0')
+	while (owner[olen] != '\0')
 		olen++;
 
 	n_dog = malloc(sizeof(struct dog));
