@@ -1,3 +1,5 @@
+#include "variadic_functions.h"
+
 /**
 * print_numbers - printing numbers
 *@separator: separator sign
