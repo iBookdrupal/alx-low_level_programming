@@ -3,13 +3,13 @@
 #include <stdlib.h>
 
 /**
-* print_numbers - printing numbers
+* print_strings - printing strings
 *@separator: separator sign
 *@n: number to print
 *
 */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	char *s;
