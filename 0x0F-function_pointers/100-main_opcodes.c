@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stidlib.h>
+#include <stdlib.h>
 
 /**
 * main - upcode
