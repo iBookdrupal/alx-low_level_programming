@@ -1,12 +1,13 @@
-section .data
+SECTION .data
 msg: db "Hello Holberton", 0
 fmt: db "%s", 10, 0
 
-	section .text
+	SECTION .text
 	extern printf
 	global main
 
 main:
+
 	mov esi, msg
 	mov edi, fmt
 	mov eax, 0
@@ -14,4 +15,3 @@ main:
 
 	mov eax, 0
 	ret
-
