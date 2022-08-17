@@ -2,11 +2,11 @@
 
 /**
 * listint_len - print length of elements
-* @h: pointer
+* @h: head of list
 * Return: return length of elements
 */
 
-size_t listint_len(const listint_t *h);
+size_t listint_len(const listint_t *h)
 {
 	size_t count = 0;
 	const listint_t *current = h;
@@ -14,10 +14,10 @@ size_t listint_len(const listint_t *h);
 
 	while (current != NULL)
 	{
-		count++;
+		count+= 1;
 		current = current->next;
 	}
 
-return (count);
+	return (count);
 }
 
