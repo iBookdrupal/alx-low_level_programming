@@ -2,7 +2,8 @@
 
 /**
 * get_bit - binary to decimal
-* @n: parameter
+* @index: bit index position
+* @n: number bit parameter
 *
 * Return: void
 */
