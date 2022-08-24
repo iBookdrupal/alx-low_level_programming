@@ -1,6 +1,3 @@
-#include "main.h"
-#include <stdio.h>
-
 /**
 * error_file - checks if file can be opened
 * @file_from: file from
